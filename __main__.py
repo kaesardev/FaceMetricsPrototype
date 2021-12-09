@@ -31,7 +31,6 @@ def main(input):
         input.ShowFPS()
         cv2.imshow('Edu Metrics', input.GetFrame())
         cv2.imshow('Analytics: Predominant Emotions', Analytics.report1())
-        cv2.imshow('Analytics: Variant Over Time', Analytics.report2())
         # Stop recording
         if cv2.waitKey(1) == ord('q'):
             break

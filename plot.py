@@ -46,34 +46,3 @@ class Analytics:
         ax.pie(slices, colors=colors, explode=explode, labels=labels, autopct='%1.1f%%', shadow=True, startangle=90)
 
         return Analytics.fig_to_frame(fig)
-
-    def report2():
-        dataset = pd.DataFrame(Analytics.Data, columns=Analytics.Columns)
-
-        # for emotion in Analytics.Emotions:
-        #     df = Analytics.Dataset[Analytics.Dataset.dominant_emotion == emotion]
-        #     x = df.timestamp
-        #     y = df[emotion]
-        #     plt.plot(x, y, label=emotion)
-            
-        # plt.xlabel('Class momment')
-        # plt.ylabel('Emotion percent')
-        # plt.title("Class reaction")
-        # plt.legend()
-
-        # make data
-        x = [f'{(i * 5):02}min' for i in range(10)]
-
-        fig, ax = plt.subplots()
-        
-  
-        # plot lines
-        for color, emotion in zip(Analytics.Colors, Analytics.Emotions):
-            # x = dataset[dataset.dominant_emotion == emotion].timestamp
-            # y = [dataset[dataset.dominant_emotion == emotion & dataset.timestamp == t].shape[0] for t in x]
-            
-            y = np.random.randint(100, size=len(x))
-            ax.plot(x, y, label=emotion, color=color)
-        ax.legend()
-
-        return Analytics.fig_to_frame(fig)
