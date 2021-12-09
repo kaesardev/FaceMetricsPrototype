@@ -29,13 +29,15 @@
 
 ```
 git clone https://github.com/kaesardev/FaceMetrics
-
+```
+```
 cd FaceMetrics
-
+```
+```
 python -m venv env
-
+```
+```
 pip install -r requirements.txt
-
 ```
 
 ---
@@ -43,10 +45,10 @@ pip install -r requirements.txt
 ## Como usar
 
 ```
-python \_\_main\_\_.py -s webcam
-
-python \_\_main\_\_.py -s screen
-
+python __main__.py -s webcam
+```
+```
+python __main__.py -s screen
 ```
 
 ---
